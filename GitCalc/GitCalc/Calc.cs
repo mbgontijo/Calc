@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace GitCalc
 {
-    class Calc
+    public class Calc
     {
         static void Main(string[] args)
         {
+            Calc c = new Calc();
+            int r = c.Soma(4, 5);
+
+            Console.WriteLine("Resultado: " + r);
+            Console.ReadKey();
         }
 
         public int Soma(int a, int b)
